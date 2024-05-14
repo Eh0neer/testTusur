@@ -11,7 +11,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="35"/>
         </Grid.RowDefinitions>
-        <TextBox Foreground="Black" FontSize="14" AcceptsReturn="True" AcceptsTab="True" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" FontFamily="Consolas"></TextBox>
+        <TextBox x:Name="MainTextArea" Foreground="Black" FontSize="14" AcceptsReturn="True" AcceptsTab="True" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" FontFamily="Consolas"></TextBox>
 
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" >
             <Button x:Name="loadButton" Content="Load" Click="loadButton_Click" Margin="5" Width="100"/>

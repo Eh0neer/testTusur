@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:testTusur"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="TextEditor" Height="650" Width="1200" Background="#1e1e1e" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="35"/>
+        </Grid.RowDefinitions>
+        <TextBox Foreground="Black" FontSize="14" AcceptsReturn="True" AcceptsTab="True" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" FontFamily="Consolas"></TextBox>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" >
+            <Button x:Name="loadButton" Content="Load" Click="loadButton_Click" Margin="5" Width="100"/>
+            <Button x:Name="saveButton" Content="Save" Click="saveButton_Click" Margin="5" Width="100" />
+            <Button x:Name="printButton" Content="Print" Click="printButton_Click" Margin="5" Width="100" />
+        </StackPanel>
 
     </Grid>
 </Window>

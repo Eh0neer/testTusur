@@ -20,5 +20,20 @@ namespace testTusur
         {
             InitializeComponent();
         }
+
+        private void loadButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void saveButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void printButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
